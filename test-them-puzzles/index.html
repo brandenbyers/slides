@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
 
-    <title>reveal.js - The HTML Presentation Framework</title>
+    <title>Test Them Puzzles</title>
 
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-    <meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="What Test-Driven Learning Can Teach About JS and TDD">
+    <meta name="author" content="Branden Byers">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -44,6 +44,16 @@
           <h1>Test Them Puzzles</h1>
         </section>
 
+        <section>
+            <pre><code data-trim>
+var arr = [1, 2, 3, 4, 5];
+var str = "Hello World!";
+var func = function (test) {
+  return console.log 'This is a test.';
+}
+            </code></pre>
+        </section>
+
       </div>
 
     </div>
@@ -56,12 +66,15 @@
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,
-        progress: true,
+        controls: false,
+        progress: false,
         history: true,
         center: true,
+        width: 1280,
+        height: 720,
+        margin: 0,
 
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'none', // none/fade/slide/convex/concave/zoom
 
         // Optional reveal.js plugins
         dependencies: [

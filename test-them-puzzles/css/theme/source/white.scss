@@ -12,8 +12,11 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-
+@import url(../../lib/font/londrina-solid/londrina-solid.css);
+@import url(../../lib/font/patrick-hand/patrick-hand.css);
+// @import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
+// @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Londrina+Solid);
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
@@ -22,25 +25,25 @@ $mainColor: #222;
 $headingColor: #222;
 
 $mainFontSize: 38px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Londrina Solid', Helvetica, sans-serif;
+$headingFont: 'Londrina Solid', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
-$headingFontWeight: 600;
-$linkColor: #2a76dd;
+$headingFontWeight: 700;
+$linkColor: #000000;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
-$heading4Size: 1.0em;
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
 
 section.has-dark-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #fff;
-	}
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
 }
 
 
