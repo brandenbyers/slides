@@ -45,13 +45,185 @@
         </section>
 
         <section>
-            <pre><code data-trim>
-var arr = [1, 2, 3, 4, 5];
-var str = "Hello World!";
-var func = function (test) {
-  return console.log 'This is a test.';
-}
-            </code></pre>
+          <h1>Coding Puzzles</h1>
+        </section>
+
+        <section>
+          <h1>Problem Solving</h1>
+        </section>
+
+        <section>
+          <h3>Simulate Real World Problems</h3>
+          <h1>Bite-size Chunks</h1>
+        </section>
+
+        <section>
+          <h1>Syntactic Wilderness</h1>
+          <h3>Getting lost is easy</h3>
+          <h3>ายๆ แต่ไม่เหมือน</h3>
+          <aside class="notes">
+            KHLAI KHLAI TAE MAI MEUAN
+            Similar, but not the same
+            Same, Same but different
+          </aside>
+        </section>
+
+        <section>
+          <h2>Programmer Practice</h2>
+          <ul>
+            <li>Athletes Train</li>
+            <li>Musicians Rehearse</li>
+            <li>Lawyers &amp; Doctors Practice</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Goals of this talk</h1>
+        </section>
+
+        <section>
+          <h1>Test-Driven Learning</h1>
+          <!-- images of TDL papers here -->
+        </section>
+
+        <section>
+          <h1>Aha!</h1>
+          <h4>Dopamine drip</h4>
+        </section>
+
+        <section>
+          <h2>Puzzles Are Universal</h2>
+        </section>
+
+        <section>
+          <h1>Examples of Historical Puzzles</h1>
+        </section>
+
+        <section>
+          <h1>Science behind Puzzles</h1>
+          <!-- science of play -->
+        </section>
+
+        <section>
+          <h3>Are you a<h3>
+          <h1>Parrot or a Crow?</h1>
+        </section>
+
+        <section>
+          <h1>Parrots</h1>
+          <ul>
+            <li>Inquisitive</li>
+            <li>Destructive exploration</li>
+            <li>Playful learners</li>
+            <li>Pull, tear, scratch probe</li>
+            <li>Haphazardly dig for food</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Crows</h1>
+          <ul>
+            <li>Curious</li>
+            <li>Explore from a distance</li>
+            <li>Methodical learners</li>
+            <li>Graceful tool users</li>
+            <li>Precisely prod for food</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Do you code like a</h1>
+          <div>
+            <h3>Parrot</h3>
+            <ul>
+              <li>Inquisitive</li>
+              <li>Destructive exploration</li>
+              <li>Playful learners</li>
+              <li>Pull, tear, scratch probe</li>
+              <li>Haphazardly dig for food</li>
+            </ul>
+            <h3>Crow</h3>
+            <ul>
+              <li>Curious</li>
+              <li>Explore from a distance</li>
+              <li>Methodical learners</li>
+              <li>Graceful tool users</li>
+              <li>Precisely prod for food</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Code Challenge Websites</h2>
+          <ul>
+            <li><a href="http://www.codewars.com/">codewars.com</a></li>
+            <li><a href="https://www.hackerrank.com/">hackerrank.com</a></li>
+            <li><a href="http://coderbyte.com/">coderbyte.com</a></li>
+            <li><a href="https://www.codeeval.com/">codeeval.com</a></li>
+            <li><a href="http://www.topcoder.com/">topcoder.com</a></li>
+            <li><a href="https://projecteuler.net/">projecteuler.net</a></li>
+            <!-- &#38;lt;&#38;#8211; link to CLI node version -->
+            <li><a href="http://www.freecodecamp.com/challenges/bonfire-meet-bonfire">freecodecamp.com/challenges/bonfire-meet-bonfire</a></li>
+            <!-- <li><a href="http://nodeschool.io/">nodeschool.io/</a></li> -->
+            <!-- <li><a href="http://exercism.io">exercism.io</a></li> -->
+            <!-- <li><a href="http://programmingpraxis.com/contents/about/">programmingpraxis.com/contents/about/</a></li> -->
+          </ul>
+        </section>
+
+        <section>
+          <h1>Example from Codewars</h1>
+        </section>
+
+        <section>
+          <h1>How-to</h1>
+          <h3>Let's make some sausage!</h3>
+        </section>
+
+        <section>
+          <pre><code>var add = function (a, b) {
+  return a + b;
+};</code><code class="fragment">
+expect(add(2, 2).to.equal(4));</code><code class="fragment">expect(add(2, '2').to.equal('22'));</code><code class="fragment">expect(add('con','cat').to.equal('concat'));</code></pre>
+        </section>
+
+        <section>
+          <h1>Assumptions</h1>
+          <h4>Bad!</h4>
+          <h1>🍑</h1>
+        </section>
+
+        <section>
+          <pre><code>var add = function (a, b) {
+  if(typeof a + b === 'string') {
+    return 'Go fish';
+  }
+  ...
+};</code><code>
+expect(add('con','cat')).to.equal('Go fish');</code><code class="fragment">expect(add(2, 2)).to.be.a('number')</code></pre>
+        </section>
+
+        <section>
+          <pre><code>var add = function (a, b) {
+  return parseInt(a) + parseInt(b);
+};</code><code>
+expect(add(2, '2').to.equal(4));</code><code class="fragment code-red">expect(add(2.22, 2.22).to.equal(4.44));</code><code class="fragment">
+// AssertionError: expected 4 to equal 4.44</code></pre>
+        </section>
+
+        <section>
+          <h1 class="font-giant">🍑</h1>
+        </section>
+
+        <section>
+          <h1>Break Things!</h1>
+          <!-- parrot or a crow; either while coding or think like a crow and break things in the sandbox of your mind -->
+        </section>
+
+        <section>
+          <h1>Chai.js</h1>
+          <h3>expect</h3>
+          <h3>should</h3>
+          <h3>assert</h3>
         </section>
 
       </div>
@@ -81,7 +253,7 @@ var func = function (test) {
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true },
           { src: 'plugin/notes/notes.js', async: true }
         ]

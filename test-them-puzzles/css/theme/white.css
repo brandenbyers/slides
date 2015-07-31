@@ -129,13 +129,13 @@ body {
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 1.25em;
-  font-family: "Patrick Hand";
-  line-height: 1.25em;
+  font-size: 1.10em;
+  font-family: courier;
+  line-height: 1.30em;
   word-wrap: break-word; }
 
 .reveal code {
-  font-family: "Patrick Hand"; }
+  font-family: courier; }
 
 .reveal pre code {
   display: block;
@@ -260,3 +260,16 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #000000; }
+
+/**********************************************
+ * COLORS AND SIZE
+ * ********************************************/
+.reveal .code-red {
+  color: red;
+  font-weight: bold;
+}
+
+.reveal .font-giant {
+  font-size: 6em;
+}
+
