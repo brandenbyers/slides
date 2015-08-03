@@ -49,6 +49,28 @@
         </section>
 
         <section>
+          <h2>Next to Last Item in a List</h2>
+          <p>Return the next-to-last item from an array.</p>
+        </section>
+
+        <section>
+          <h2>The Gas Station Problem</h2>
+          <p>There is a truck driving clockwise on a circular route;<br/>the truck has a gas tank with infinite capacity, initially empty.</p>
+          <p>Along the route are gas stations with varying amounts of gas available:<br />you are given a list of gas stations<br />with the amounts of gas they have available<br />and the amounts of gas required to drive to the next gas station.</p>
+          <p>You must find a gas station that,<br />for a trip starting from that gas station,<br />will be able to return to that gas station.</p>
+        </section>
+
+        <section>
+          <h2>Funny Example</h2>
+          <p></p>
+        </section>
+
+        <section>
+          <h2>Complex Example</h2>
+          <p></p>
+        </section>
+
+        <section>
           <h1>Problem Solving</h1>
         </section>
 
@@ -97,11 +119,13 @@
 
         <section>
           <h1>Examples of Historical Puzzles</h1>
+          <!-- http://mathworld.wolfram.com/Stomachion.html -->
         </section>
 
         <section>
           <h1>Science behind Puzzles</h1>
           <!-- science of play -->
+          <a href="http://www.nytimes.com/2010/12/07/science/07brain.html">Tracing the Spark of Creative Problem-Solving | NYTimes</a>
         </section>
 
         <section>
@@ -224,6 +248,77 @@ expect(add(2, '2').to.equal(4));</code><code class="fragment code-red">expect(ad
           <h3>expect</h3>
           <h3>should</h3>
           <h3>assert</h3>
+        </section>
+
+        <section>
+          <pre><code>expect('something').to.contain('thing');
+
+expect('Hello World').to.be.a('string');</code></pre>
+        </section>
+
+        <section>
+          <h1>Draft Ideas</h1>
+          <h3>"Real-World"</h3>
+          <h3>Contrived</h3>
+          <h3>Inspired by Fiction</h3>
+        </section>
+
+        <section>
+          <h1>Libraries</h1>
+          <h3>Underscore</h3>
+          <h3>Lodash</h3>
+          <h3>Ramda</h3>
+          <h3>Moment</h3>
+        </section>
+
+        <section>
+          <h1>Underscore example</h1>
+        </section>
+
+        <section>
+          <h1>Frameworks</h1>
+          <h3>Angular, React, etc...</h3>
+          <h2>Docs and tests</h2>
+          <h4>Syntactic Sugar</h4>
+        </section>
+
+        <section>
+          <h1>Work Backwards</h1>
+          <h3>Solved software problem</h3>
+          <h3>Break it down</h3>
+          <h3>Use a bite-size chunk</h3>
+          <p><a href="https://rosettacode.org">rosettacode.org</a></p>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Slasher Film</h1>
+          <p>Return the surviving elements of an array<br />after chopping off n elements from the head.</p>
+          <pre><code>
+            slasher([1, 2, 3], 2);</code></pre>
+        </section>
+
+        <section>
+          <pre>
+            <code>expect(slasher([1,2,3],2)).to.equal([3]);</code>
+            <code>expect(slasher([1,2,3],0)).to.equal([1,2,3]);</code>
+            <code>expect(slasher([1,2,3],9)).to.equal([]);</code>
+            <code></code>
+            <code></code>
+          </pre>
+        </section>
+
+        <section>
+          <pre>
+            <code>expect(slasher([1,2,3],2)).to.equal(['Three, you're lucky to still be.']);</code>
+            <code>expect(slasher([1,2,3],0)).to.equal(['All numbers live another day.']);</code>
+            <code>expect(slasher([1,2,3],9)).to.equal(['It is a sad day.']);</code>
+            <code>expect(slasher(['1,354','22','4900'],1)).to.equal(['Four thousand nine hundred and twenty-two; you are amongst the lucky few.']);</code>
+          </pre>
+        </section>
+
+        <section>
+          <h1>Rhyming Puzzle</h1>
         </section>
 
       </div>
