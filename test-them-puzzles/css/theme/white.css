@@ -273,3 +273,8 @@ body {
   font-size: 6em;
 }
 
+.reveal .font-small {
+  font-size: 0.35em;
+  line-height: 1.2em;
+}
+

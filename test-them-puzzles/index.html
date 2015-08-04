@@ -45,6 +45,36 @@
         </section>
 
         <section>
+          <h2>Learning to code is hard</h2>
+        </section>
+
+        <section>
+          <h2>Puzzles are fun!</h2>
+        </section>
+
+        <section>
+          <h2>Testing = Waste-o-time</h2>
+        </section>
+
+        <section>
+          <h2>Puzzles are time sucks</h2>
+        </section>
+
+        <section>
+          <h2>So let's waste some time together</h2>
+        </section>
+
+        <section>
+          <h1>Coding Puzzles</h1>
+        </section>
+
+        <section data-background="img/parrot-head.jpg" data-background-transition="none"></section>
+
+        <section data-background="img/crow-puzzled.jpg" data-background-transition="none"></section>
+
+        <section data-background="img/crow-behind.jpg" data-background-transition="none"></section>
+
+        <section>
           <h1>Coding Puzzles</h1>
         </section>
 
@@ -198,6 +228,10 @@
           <h1>Example from Codewars</h1>
         </section>
 
+        <section data-background="#2C2D30"><img src="img/code-wars-1.jpg" alt=""></section>
+
+        <section data-background="#F0F0F0"><img src="img/free-code-camp-1.jpg" alt=""></section>
+
         <section>
           <h1>How-to</h1>
           <h3>Let's make some sausage!</h3>
@@ -299,26 +333,71 @@ expect('Hello World').to.be.a('string');</code></pre>
         </section>
 
         <section>
-          <pre>
-            <code>expect(slasher([1,2,3],2)).to.equal([3]);</code>
-            <code>expect(slasher([1,2,3],0)).to.equal([1,2,3]);</code>
-            <code>expect(slasher([1,2,3],9)).to.equal([]);</code>
-            <code></code>
-            <code></code>
-          </pre>
+          <pre><code>expect(slasher([1,2,3],2)).to.equal([3]);</code><code class="fragment">expect(slasher([1,2,3],0)).to.equal([1,2,3]);</code><code class="fragment">expect(slasher([1,2,3],9)).to.equal([]);</code></pre>
         </section>
 
         <section>
           <pre>
             <code>expect(slasher([1,2,3],2)).to.equal(['Three, you're lucky to still be.']);</code>
-            <code>expect(slasher([1,2,3],0)).to.equal(['All numbers live another day.']);</code>
-            <code>expect(slasher([1,2,3],9)).to.equal(['It is a sad day.']);</code>
-            <code>expect(slasher(['1,354','22','4900'],1)).to.equal(['Four thousand nine hundred and twenty-two; you are amongst the lucky few.']);</code>
           </pre>
         </section>
 
         <section>
-          <h1>Rhyming Puzzle</h1>
+          <pre>
+            <code>expect(slasher([1,2,3],0)).to.equal(['All numbers live another day.']);</code>
+          </pre>
+        </section>
+
+        <section>
+          <pre>
+            <code>expect(slasher([1,2,3],9)).to.equal(['It is a sad day.']);</code>
+          </pre>
+        </section>
+
+        <section>
+          <pre><code>expect(slasher(['1,354','22','4900'],1)).to.equal(['Four thousand nine hundred and twenty-two; you are amongst the lucky few.']);</code></pre>
+        <p class="fragment" data-fragment-index="1">Return a string <span class="fragment" data-fragment-index="3">of the the English word equivalents</span><br />of the surviving elements <span class="fragment" data-fragment-index="2">(numbers)</span> in an array<br />after chopping off n elements from the head.<br /><span class="fragment" data-fragment-index="4">The numbers must be listed from last to first.</code><br /><span class="fragment" data-fragment-index="5">The string should be finished with a phrase<br />that rhymes with the last number listed.</span></p>
+        </section>
+
+        <section>
+          <h3>Rhyming Numbers Poem</h3>
+          <p>You will be given an array of numbers.<br />Each number will be between 0 and 9.<br />These numbers may be integers or strings.<br />If a number is in a string, it may be a digit or word.<br />Return a nonsense poem,<br /> where each line starts with a number from the array<br />followed by a phrase ending in a word that rhymes with that number.</p>
+        </section>
+
+        <section>
+          <p>Nine, you smell like wine<br />Five, chicken dumplings make me feel alive<br />Three, you be lost deep in the sea<br />Twenty-two, please stop sniffing glue<br />One, this poem is done</p>
+        </section>
+
+        <section>
+          <h1></h1>
+          <pre><code class="font-small">
+    {
+      "id": "a26cbbe9ad8655a977e1ceb5",
+      "name": "Bonfire: Find the Longest Word in a String",
+      "dashedName": "bonfire-find-the-longest-word-in-a-string",
+      "difficulty": "1.04",
+      "description": [
+        "Return the length of the longest word in the provided sentence.",
+      ],
+      "challengeSeed": [
+        "function findLongestWord(str) {",
+        "  return str.length;",
+        "}",
+        "",
+        "findLongestWord('The quick brown fox jumped over the lazy dog');"
+      ],
+      "tests": [
+        "expect(findLongestWord('The quick brown fox jumped over the lazy dog')).to.be.a('Number');",
+        "expect(findLongestWord('The quick brown fox jumped over the lazy dog')).to.equal(6);",
+        "expect(findLongestWord('May the force be with you')).to.equal(5);",
+        "expect(findLongestWord('Google do a barrel roll')).to.equal(6);",
+        "expect(findLongestWord('What is the average airspeed velocity of an unladen swallow')).to.equal(8);"
+      ],
+      "MDNlinks": [
+        "String.split()",
+        "String.length"
+      ]
+    }</code></pre>
         </section>
 
       </div>
