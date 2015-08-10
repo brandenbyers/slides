@@ -156,26 +156,25 @@ body {
 .reveal pre {
   display: block;
   position: relative;
-  width: 90%;
+  width: 95%;
   margin: $blockMargin auto;
 
   text-align: left;
-  font-size: 1.25em;
-  font-family: "Patrick Hand";
+  font-size: 0.72em;
+  font-family: Courier;
   line-height: 1.25em;
 
   word-wrap: break-word;
 }
 
 .reveal code {
-  font-family: "Patrick Hand";
+  font-family: Courier;
 }
 
 .reveal pre code {
   display: block;
   padding: 5px;
-  overflow: auto;
-  max-height: 500px;
+  overflow: hidden;
   word-wrap: break-word;
   background: #FFFFFF;
   color: #000000;

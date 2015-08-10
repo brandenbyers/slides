@@ -12,11 +12,7 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/londrina-solid/londrina-solid.css);
 @import url(../../lib/font/patrick-hand/patrick-hand.css);
-// @import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
-// @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
-// @import url(http://fonts.googleapis.com/css?family=Londrina+Solid);
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
@@ -25,8 +21,8 @@ $mainColor: #222;
 $headingColor: #222;
 
 $mainFontSize: 38px;
-$mainFont: 'Londrina Solid', Helvetica, sans-serif;
-$headingFont: 'Londrina Solid', Helvetica, sans-serif;
+$mainFont: 'Patrick Hand', Helvetica, sans-serif;
+$headingFont: 'Patrick Hand', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -50,3 +46,45 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+/**********************************************
+ * COLORS AND SIZE
+  * ********************************************/
+.reveal .code-red {
+  color: red;
+  font-weight: bold;
+}
+
+.reveal .code-grey {
+  color: #CCC;
+}
+
+.reveal .bird-page {
+  position: absolute;
+  width: 200px;
+}
+
+.reveal .font-giant {
+  font-size: 6em;
+}
+
+.reveal .font-medium {
+  font-size: 0.55em;
+  line-height: 1.5em;
+}
+
+.reveal .font-small {
+  font-size: 0.55em;
+  line-height: 1.2em;
+}
+
+.reveal .column-left {
+  float: left;
+  padding: 50px;
+}
+
+.reveal .column-right {
+  float:right;
+  padding: 60px;
+}
+

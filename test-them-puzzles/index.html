@@ -385,7 +385,7 @@ expect('Hello World').to.be.a('string');</code></pre>
 
         <!-- show initial function -->
         <section>
-          <pre><code>var rhymingNumberPoem = function(arr) {</code><code class="code-grey">  // this is a poet but didn't know it</code><code>  return str;
+          <pre><code data-trim>var rhymingNumberPoem = function(arr) {</code><code class="code-grey" data-trim>  // this is a poet but didn't know it</code><code data-trim>  return str;
 };</code></pre>
         </section>
 
@@ -397,23 +397,40 @@ var longArr  = [9,5,3,1,5,4,3,5,6,3,2,3,4,7,5,2,3,4,7,10,23,4,2];
         </section>
 
         <section>
-          <pre><code>describe('Rhyming Number Poem', function() {
-  it('should return a string', function() {
+          <pre><code data-trim>describe('Rhyming Number Poem', function() {</code><code class="fragment">  it('should return a string', function() {
     expect(rhymingNumberPoem(shortArr)).to.be.a('string');
-  });
-  it('should return proper amount of lines', function() {
+  });</code><code class="fragment">  it('should return proper amount of lines', function() {
     expect(rhymingNumberPoem(shortArr).split('\n').length).to.equal(4);
-  });
-  it('should create a short rhyming poem', function() {
+  });</code><code class="fragment">  it('should create a short rhyming poem', function() {
     expect(rhymeChecker(rhymingNumberPoem(shortArr))).to.equal(true);
-  });
-  it('should create a long rhyming poem', function() {
+  });</code><code class="fragment">  it('should create a long rhyming poem', function() {
     expect(rhymeChecker(rhymingNumberPoem(longArr))).to.equal(true);
-  });
-});</code></pre>
+  });</code><code>});</code></pre>
         </section>
 
         <!-- break down how what was necessary to test -->
+        <section>
+          <pre><code data-trim>var rhymeChecker = function(str) {
+  var arr = str.split(/,|\./).join('').split("\n");
+  if(str.length < 1 || arr[0].split(' ').length < 3) {
+    return false;
+  }
+  var count = arr.reduce(function(a, b) {
+    var words = b.split(' '),
+        firstWord = words[0].toLowerCase(),
+        lastWord = words[words.length - 1].toLowerCase();
+    if(numberRhymes[firstWord].match(lastWord)) {
+      return a + 1;
+    }
+    return a;
+  }, 0);
+  if(count < arr.length) {
+    return false;
+  }
+  return true;
+};</code></pre>
+        </section>
+
         <!--  -->
         <!-- rhymebrain.com -->
         <!--  -->
@@ -449,7 +466,8 @@ var longArr  = [9,5,3,1,5,4,3,5,6,3,2,3,4,7,5,2,3,4,7,10,23,4,2];
         <!-- final images or drawings of crow and parrot happy together -->
 
         <section>
-          <h1></h1>
+          <h2>Bonfires</h2>
+          <p class="font-small">freecodecamp/seed/challenges/basic-bonfires.json</p>
           <pre><code class="font-small">
     {
       "id": "a26cbbe9ad8655a977e1ceb5",
@@ -507,7 +525,7 @@ var longArr  = [9,5,3,1,5,4,3,5,6,3,2,3,4,7,5,2,3,4,7,10,23,4,2];
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          // { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true },
           { src: 'plugin/notes/notes.js', async: true }
         ]

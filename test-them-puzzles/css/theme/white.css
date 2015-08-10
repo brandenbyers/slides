@@ -1,7 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:900,500);
-@import url(../../lib/font/londrina-solid/londrina-solid.css);
 @import url(../../lib/font/patrick-hand/patrick-hand.css);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 /**
  * White theme for reveal.js. This is the opposite of the 'black' theme.
  *
@@ -18,7 +15,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Patrick Hand", sans-serif;
+  font-family: 'Patrick Hand', Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
   color: #222; }
@@ -38,8 +35,8 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Patrick Hand", sans-serif;
-  font-weight: 900;
+  font-family: 'Patrick Hand', Helvetica, sans-serif;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -50,7 +47,7 @@ body {
   font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 2.77em; }
+  font-size: 2.11em; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -66,8 +63,7 @@ body {
  *********************************************/
 .reveal p {
   margin: 20px 0;
-  line-height: 1.5;
-  font-weight: 400; }
+  line-height: 1.3; }
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img, .reveal video, .reveal iframe {
@@ -129,22 +125,21 @@ body {
 .reveal pre {
   display: block;
   position: relative;
-  width: 90%;
+  width: 95%;
   margin: 20px auto;
   text-align: left;
-  font-size: 0.75em;
-  font-family: courier;
-  line-height: 1.20em;
+  font-size: 0.72em;
+  font-family: Courier;
+  line-height: 1.25em;
   word-wrap: break-word; }
 
 .reveal code {
-  font-family: courier; }
+  font-family: Courier; }
 
 .reveal pre code {
   display: block;
   padding: 5px;
-  overflow: auto;
-  max-height: 500px;
+  overflow: hidden;
   word-wrap: break-word;
   background: #FFFFFF;
   color: #000000; }
@@ -266,41 +261,33 @@ body {
 
 /**********************************************
  * COLORS AND SIZE
- * ********************************************/
+  * ********************************************/
 .reveal .code-red {
   color: red;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .reveal .code-grey {
-  color: #CCC;
-}
+  color: #CCC; }
 
 .reveal .bird-page {
   position: absolute;
-  width: 200px;
-}
+  width: 200px; }
 
 .reveal .font-giant {
-  font-size: 6em;
-}
+  font-size: 6em; }
 
 .reveal .font-medium {
   font-size: 0.55em;
-  line-height: 1.5em;
-}
+  line-height: 1.5em; }
 
 .reveal .font-small {
-  font-size: 0.35em;
-  line-height: 1.2em;
-}
+  font-size: 0.55em;
+  line-height: 1.2em; }
 
 .reveal .column-left {
   float: left;
-  padding: 50px;
-}
+  padding: 50px; }
 
 .reveal .column-right {
-  float:right;
-  padding: 60px;
-}
+  float: right;
+  padding: 60px; }
