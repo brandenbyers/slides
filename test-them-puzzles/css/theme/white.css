@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:900,500);
 @import url(../../lib/font/londrina-solid/londrina-solid.css);
 @import url(../../lib/font/patrick-hand/patrick-hand.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 /**
  * White theme for reveal.js. This is the opposite of the 'black' theme.
  *
@@ -16,7 +18,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
+  font-family: "Patrick Hand", sans-serif;
   font-size: 38px;
   font-weight: normal;
   color: #222; }
@@ -36,8 +38,8 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-weight: 700;
+  font-family: "Patrick Hand", sans-serif;
+  font-weight: 900;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -48,7 +50,7 @@ body {
   font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 2.77em; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -64,7 +66,8 @@ body {
  *********************************************/
 .reveal p {
   margin: 20px 0;
-  line-height: 1.3; }
+  line-height: 1.5;
+  font-weight: 400; }
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img, .reveal video, .reveal iframe {
@@ -129,9 +132,9 @@ body {
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 1.10em;
+  font-size: 0.75em;
   font-family: courier;
-  line-height: 1.30em;
+  line-height: 1.20em;
   word-wrap: break-word; }
 
 .reveal code {
@@ -269,8 +272,22 @@ body {
   font-weight: bold;
 }
 
+.reveal .code-grey {
+  color: #CCC;
+}
+
+.reveal .bird-page {
+  position: absolute;
+  width: 200px;
+}
+
 .reveal .font-giant {
   font-size: 6em;
+}
+
+.reveal .font-medium {
+  font-size: 0.55em;
+  line-height: 1.5em;
 }
 
 .reveal .font-small {
@@ -278,3 +295,12 @@ body {
   line-height: 1.2em;
 }
 
+.reveal .column-left {
+  float: left;
+  padding: 50px;
+}
+
+.reveal .column-right {
+  float:right;
+  padding: 60px;
+}
