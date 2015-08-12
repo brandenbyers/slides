@@ -273,6 +273,10 @@ body {
   position: absolute;
   width: 200px; }
 
+.reveal .hindsight {
+  position: absolute;
+  width: 400px; }
+
 .reveal .font-giant {
   font-size: 6em; }
 
@@ -283,6 +287,9 @@ body {
 .reveal .font-small {
   font-size: 0.55em;
   line-height: 1.2em; }
+
+.reveal .text-padded {
+  padding: 0 7em 0 7em; }
 
 .reveal .column-left {
   float: left;

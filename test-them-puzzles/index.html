@@ -50,6 +50,26 @@
         </section>
 
         <section>
+          <h1>Puzzles</h1>
+        </section>
+
+        <section>
+          <img class="stretch" src="img/drawing-sudoku.svg" alt="">
+        </section>
+
+        <section>
+          <img class="stretch" src="img/drawing-rubiks.svg" alt="">
+        </section>
+
+        <section>
+          <img class="stretch" src="img/drawing-crossword.svg" alt="">
+        </section>
+
+        <section>
+          <img class="stretch" src="img/puzzlejs.png" alt="">
+        </section>
+
+        <section>
           <h2>Puzzles are fun!</h2>
         </section>
 
@@ -86,23 +106,21 @@
 
         <section>
           <h2>The Gas Station Problem</h2>
-          <p>There is a truck driving clockwise on a circular route;<br/>the truck has a gas tank with infinite capacity, initially empty.</p>
-          <p>Along the route are gas stations with varying amounts of gas available:<br />you are given a list of gas stations<br />with the amounts of gas they have available<br />and the amounts of gas required to drive to the next gas station.</p>
-          <p>You must find a gas station that,<br />for a trip starting from that gas station,<br />will be able to return to that gas station.</p>
+          <div class="font-small">
+            <p>There is a truck driving clockwise on a circular route;<br/>the truck has a gas tank with infinite capacity, initially empty.</p>
+            <p>Along the route are gas stations with varying amounts of gas available:<br />you are given a list of gas stations<br />with the amounts of gas they have available<br />and the amounts of gas required to drive to the next gas station.</p>
+            <p>You must find a gas station that,<br />for a trip starting from that gas station,<br />will be able to return to that gas station.</p>
+          </div>
         </section>
 
         <section>
           <h2>Funny Example Goes Here</h2>
-          <p></p>
+          <img class="hindsight" src="img/hindsight-2.svg" alt="">
         </section>
 
         <section>
-          <h2>Complex Example</h2>
-          <p></p>
-        </section>
-
-        <section>
-          <h1>Problem Solving</h1>
+          <h3>Investigating the Torricelli point of a triangle</h3>
+          <p class="font-small text-padded">Let ABC be a triangle with all interior angles being less than 120 degrees.<br />Let X be any point inside the triangle and let XA = p, XC = q, and XB = r.<br /><br />Fermat challenged Torricelli to find the position of X such that p + q + r was minimised.<br /><br />Torricelli was able to prove that if equilateral triangles AOB, BNC and AMC are constructed on each side of triangle ABC, the circumscribed circles of AOB, BNC, and AMC will intersect at a single point, T, inside the triangle.<br />Moreover he proved that T, called the Torricelli/Fermat point, minimises p + q + r. Even more remarkable,<br />it can be shown that when the sum is minimised, AN = BM = CO = p + q + r and that AN, BM and CO also intersect at T.<br /><br />If the sum is minimised and a, b, c, p, q and r are all positive integers we shall call triangle ABC a Torricelli triangle. For example, a = 399, b = 455, c = 511 is an example of a Torricelli triangle, with p + q + r = 784.<br /><br />Find the sum of all distinct values of p + q + r ≤ 120000 for Torricelli triangles.</p>
         </section>
 
         <section>
@@ -124,10 +142,6 @@
         </section>
 
         <section>
-          <h1>Goals of this talk</h1>
-        </section>
-
-        <section>
           <h2>Programmer Practice</h2>
           <ul>
             <li>Athletes Train</li>
@@ -142,12 +156,12 @@
         </section>
 
         <section>
-          <h1>Aha!</h1>
-          <h4>Dopamine drip</h4>
+          <h2>Puzzles Are Universal</h2>
         </section>
 
         <section>
-          <h2>Puzzles Are Universal</h2>
+          <h1>Aha!</h1>
+          <h4>Dopamine drip</h4>
         </section>
 
         <section>
@@ -162,12 +176,6 @@
         </section>
 
         <section>
-          <h1>Science behind Puzzles</h1>
-          <!-- science of play -->
-          <a href="http://www.nytimes.com/2010/12/07/science/07brain.html">Tracing the Spark of Creative Problem-Solving | NYTimes</a>
-        </section>
-
-        <section>
           <h3>Are you a<h3>
           <h1>Parrot or a Crow?</h1>
         </section>
@@ -178,7 +186,7 @@
             <li>Inquisitive</li>
             <li>Destructive exploration</li>
             <li>Playful learners</li>
-            <li>Pull, tear, scratch probe</li>
+            <li>Pull, tear, scratch, probe</li>
             <li>Haphazardly dig for food</li>
           </ul>
           <img class="bird-page" src="img/parrot-box-2.svg" alt="">
@@ -221,6 +229,10 @@
         </section>
 
         <section>
+          <img class="stretch" src="img/crow-box-2.svg" alt="">
+        </section>
+
+        <section>
           <h2>Code Challenge Websites</h2>
           <ul>
             <li><a href="http://www.codewars.com/">codewars.com</a></li>
@@ -255,8 +267,8 @@ expect(add(2, 2).to.equal(4));</code><code class="fragment">expect(add(2, '2').t
 
         <section>
           <h1>Assumptions</h1>
+          <img src="img/peach-emoji.png">
           <h4>Bad!</h4>
-          <h1>🍑</h1>
         </section>
 
         <section>
@@ -278,12 +290,7 @@ expect(add(2, '2').to.equal(4));</code><code class="fragment code-red">expect(ad
         </section>
 
         <section>
-          <h1 class="font-giant">🍑</h1>
-        </section>
-
-        <section>
-          <h1>Break Things!</h1>
-          <!-- parrot or a crow; either while coding or think like a crow and break things in the sandbox of your mind -->
+          <img src="img/peach-emoji.png">
         </section>
 
         <section>
@@ -315,6 +322,7 @@ expect('Hello World').to.be.a('string');</code></pre>
         </section>
 
         <section>
+          <h2>_.shuffle</h2>
           <pre><code class="font-medium">test('shuffle', function() {
   deepEqual(_.shuffle([1]), [1], 'behaves correctly on size 1 arrays');
   var numbers = _.range(20);
@@ -349,7 +357,7 @@ expect('Hello World').to.be.a('string');</code></pre>
           <h1>Slasher Film</h1>
           <p>Return the surviving elements of an array<br />after chopping off n elements from the head.</p>
           <pre><code>
-            slasher([1, 2, 3], 2);</code></pre>
+                         slasher([1, 2, 3], 2);</code></pre>
         </section>
 
         <section>
@@ -385,7 +393,7 @@ expect('Hello World').to.be.a('string');</code></pre>
         </section>
 
         <section>
-          <p>Nine, you smell like wine<br />Five, chicken dumplings make me feel alive<br />Three, you be lost deep in the sea<br />Twenty-two, please stop sniffing glue<br />One, this poem is done</p>
+          <p>Nine, you smell like wine<br />Five, chicken dumplings make me feel alive<br />Three, you be lost deep in the sea<br />Two, please stop sniffing glue<br />One, this poem is done</p>
         </section>
 
         <!-- show initial function -->
@@ -405,7 +413,7 @@ var longArr  = [9,5,3,1,5,4,3,5,6,3,2,3,4,7,5,2,3,4,7,10,23,4,2];
           <pre><code data-trim>describe('Rhyming Number Poem', function() {</code><code class="fragment">  it('should return a string', function() {
     expect(rhymingNumberPoem(shortArr)).to.be.a('string');
   });</code><code class="fragment">  it('should return proper amount of lines', function() {
-    expect(rhymingNumberPoem(shortArr).split('\n').length).to.equal(4);
+    expect(rhymingNumberPoem(shortArr).split('\n').length).to.equal(shortArr.length);
   });</code><code class="fragment">  it('should create a short rhyming poem', function() {
     expect(rhymeChecker(rhymingNumberPoem(shortArr))).to.equal(true);
   });</code><code class="fragment">  it('should create a long rhyming poem', function() {
@@ -436,10 +444,13 @@ var longArr  = [9,5,3,1,5,4,3,5,6,3,2,3,4,7,5,2,3,4,7,10,23,4,2];
 };</code></pre>
         </section>
 
-        <!--  -->
-        <!-- rhymebrain.com -->
-        <!--  -->
         <!-- scraped data file -->
+        <section>
+          <pre><code>
+  zero: 'hero giro tiro nonzero subzero',
+  one: 'won done run son none sun gun fun tion ton nun shun sion bun donne dun fon pun rien bn cen gon hun jun tonne tun ven yean naan spun fron seisin stun toucan anyone begun undone outdone outrun spline rerun redone everyone overrun overdone cretonne misdone twentyone'</code></pre>
+        </section>
+
         <!--  -->
         <!-- show how to write a test file -->
         <!--  -->

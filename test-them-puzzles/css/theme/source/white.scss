@@ -64,6 +64,11 @@ section.has-dark-background {
   width: 200px;
 }
 
+.reveal .hindsight {
+  position: absolute;
+  width: 400px;
+}
+
 .reveal .font-giant {
   font-size: 6em;
 }
@@ -76,6 +81,10 @@ section.has-dark-background {
 .reveal .font-small {
   font-size: 0.55em;
   line-height: 1.2em;
+}
+
+.reveal .text-padded {
+  padding: 0 7em 0 7em;
 }
 
 .reveal .column-left {
