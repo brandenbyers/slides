@@ -412,7 +412,7 @@ var longArr  = [9,5,3,1,5,4,3,5,6,3,2,3,4,7,5,2,3,4,7,10,23,4,2];
         <section>
           <pre><code data-trim>describe('Rhyming Number Poem', function() {</code><code class="fragment">  it('should return a string', function() {
     expect(rhymingNumberPoem(shortArr)).to.be.a('string');
-  });</code><code class="fragment">  it('should return proper amount of lines', function() {
+  });</code><code class="fragment">  it('should return correct number of lines from short array', function() {
     expect(rhymingNumberPoem(shortArr).split('\n').length).to.equal(shortArr.length);
   });</code><code class="fragment">  it('should create a short rhyming poem', function() {
     expect(rhymeChecker(rhymingNumberPoem(shortArr))).to.equal(true);
@@ -451,13 +451,17 @@ var longArr  = [9,5,3,1,5,4,3,5,6,3,2,3,4,7,5,2,3,4,7,10,23,4,2];
   one: 'won done run son none sun gun fun tion ton nun shun sion bun donne dun fon pun rien bn cen gon hun jun tonne tun ven yean naan spun fron seisin stun toucan anyone begun undone outdone outrun spline rerun redone everyone overrun overdone cretonne misdone twentyone'</code></pre>
         </section>
 
-        <!--  -->
         <!-- show how to write a test file -->
-        <!--  -->
+        <section>
+          <p>brandenbyers.com/slides/test-them-puzzles/poem.js</p>
+        </section>
+
         <!-- show how to run a test file using mocha -->
-        <!--  -->
-        <!-- put it into a repo so attendees can try to solve it -->
-        <!--  -->
+        <section>
+          <p>npm install -g mocha</p>
+          <p>npm install chai</p>
+        </section>
+
         <!-- share your puzzles &#45; with the world! -->
         <!--  -->
         <!-- freecodecamp example -->

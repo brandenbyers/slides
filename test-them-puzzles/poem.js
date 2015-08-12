@@ -1,8 +1,7 @@
 var chai = require('chai');
 var expect = chai.expect;
-var numberRhymes = require('./number-words');
+var numberRhymes = require('./words');
 
-// This is an example coding puzzle.
 // You will be given an array of numbers.
 // Each number will be between 0 and 9.
 // These numbers may be integers or strings.
@@ -16,7 +15,7 @@ var someWrong = 'Nine, you smell like cheese\nFive, chicken dumplings make me fe
 
 var rhymingNumberPoem = function(arr) {
   // This function is a poet and it didn't know it.
-  var str = someWrong;
+  var str = rhymingPoem;
   return str;
 };
 
@@ -49,8 +48,11 @@ describe('Rhyming Number Poem', function() {
   it('should return a string', function() {
     expect(rhymingNumberPoem([9,5,3,1,6,7])).to.be.a('string');
   });
-  it('should return proper amount of lines', function() {
+  it('should return correct number of lines from short array', function() {
     expect(rhymingNumberPoem(shortArr).split('\n').length).to.equal(4);
+  });
+  it('should return correct number of lines from long array', function() {
+    expect(rhymingNumberPoem(longArr).split('\n').length).to.equal(27);
   });
   it('should create a short rhyming poem', function() {
     expect(rhymeChecker(rhymingNumberPoem(shortArr))).to.equal(true);
