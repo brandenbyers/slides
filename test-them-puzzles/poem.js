@@ -11,7 +11,7 @@ var numberRhymes = require('./words');
 // followed by a phrase ending in a word that rhymes with that number.
 
 var rhymingPoem = 'Nine, you smell like wine\nFive, chicken dumplings make me feel alive\nThree, you be lost deep in the sea\nOne, this poem is done';
-var someWrong = 'Nine, you smell like cheese\nFive, chicken dumplings make me feel alive\nThree, you be lost deep in the sea\nOne, this poem is done';
+var someWrong = 'Nine, you smell like cheese\nFive, chicken dumplings make me feel change\nThree, you be lost deep in the sea\nOne, this poem is done';
 
 var rhymingNumberPoem = function(arr) {
   // This function is a poet and it didn't know it.
