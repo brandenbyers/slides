@@ -261,13 +261,16 @@ body {
 
 /**********************************************
  * COLORS AND SIZE
-  * ********************************************/
+ * ********************************************/
 .reveal .code-red {
   color: red;
   font-weight: bold; }
 
 .reveal .code-grey {
   color: #CCC; }
+
+.reveal .lowercase {
+  text-transform: lowercase; }
 
 .reveal .bird-page {
   position: absolute;
