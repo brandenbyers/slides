@@ -1,0 +1,114 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300,200);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 38px;
+$mainFont: 'Yanone Kaffeesatz', sans-serif;
+$headingFont: 'Yanone Kaffeesatz', sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 700;
+$linkColor: #000000;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+/**********************************************
+ * COLORS AND SIZE
+ * ********************************************/
+.reveal .code-red {
+  color: red;
+  font-weight: bold;
+}
+
+.reveal .code-grey {
+  color: #CCC;
+}
+
+.reveal .lowercase {
+  text-transform: lowercase;
+}
+
+.reveal .bird-page {
+  position: absolute;
+  width: 200px;
+}
+
+.reveal .hindsight {
+  position: absolute;
+  width: 400px;
+}
+
+.reveal .font-giant {
+  font-size: 6em;
+}
+
+.reveal .font-medium {
+  font-size: 0.55em;
+  line-height: 1.5em;
+}
+
+.reveal .font-small {
+  font-size: 0.55em;
+  line-height: 1.2em;
+}
+
+.reveal .text-padded {
+  padding: 0 7em 0 7em;
+}
+
+.reveal .column-left {
+  float: left;
+  padding: 50px;
+}
+
+.reveal .column-left-image {
+  float: left;
+  padding: 50px 0 0 200px;
+  width: 250px;
+}
+
+.reveal .column-right-image {
+  float: right;
+  padding: 50px 180px 0 0;
+}
+
+.reveal .column-right {
+  float:right;
+  padding: 60px;
+}
+
