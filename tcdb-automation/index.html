@@ -44,42 +44,89 @@
           <h1>TCDB Automation</h1>
         </section>
 
+        <!-- <section> -->
+        <!--   <h1>Follow along</h1> -->
+        <!--   <h3>brandenbyers.com/slides/tcdb&#45;automation</h3> -->
+        <!-- </section> -->
+
         <section>
-          <h1>Follow along</h1>
-          <h3>brandenbyers.com/slides/tcdb-automation</h3>
+          <pre><code>
+describe 'directory.groupsTest', ->
+
+  it 'P1: [TC33587.3] Add a new Group in AdminUI', ->
+    ## Description: Tests ability to create groups in AdminUI.
+    ## Assumption: AdminUI page is loaded.
+
+    ## Navigate to '/directory/groups' to load Groups page.; Page should load.
+    HelpMe.loadWebPage '/directory/groups'
+    expect(PO.pageAnchor.isPresent()).to.eventually.be.true
+
+    ## Click Add Group button.; Add Group dialog opens.
+    HelpMe.clickWhenClickable PO.addNewGroupButton
+    expect(PO.createGroupButton.isEnabled()).to.eventually.be.false
+          </code></pre>
         </section>
 
         <section>
-          <h1>Motivation</h1>
+          <h2>Motivation</h2>
           <ul>
             <li class="fragment">Laziness</li>
-            <li class="fragment">One Source of Truth</li>
+            <li class="fragment">Single source for editing</li>
             <li class="fragment">Up-to-date and accurate</li>
             <li class="fragment">Execution history log</li>
           </ul>
-
         </section>
 
         <section>
-          <pre><code>var add = function (a, b) {
-  return a + b;
-};</code><code class="fragment">
-expect(add(2, 2).to.equal(4));</code><code class="fragment">expect(add(2, '2').to.equal('22'));</code><code class="fragment">expect(add('con','cat').to.equal('concat'));</code></pre>
+          <h2>Architecture</h2>
+          <ul>
+            <li class="fragment">Check for new TCs</li>
+            <li class="fragment">Generate new TC numbers</li>
+            <li class="fragment">Parse all TC comments</li>
+            <li class="fragment">Diff with current version in TCDB</li>
+            <li class="fragment">Update necessary TCs</li>
+            <li class="fragment">Bump version number of Test Plan</li>
+          </ul>
         </section>
 
         <section>
-          <pre>
-            <code>expect(slasher([1,2,3],2)).to.equal(['Three, you're lucky to still be.']);</code>
-          </pre>
+          <h2>Parsing Comments</h2>
         </section>
 
         <section>
-          <pre><code>expect(slasher(['1,354','22','4900'],1)).to.equal(['Four thousand nine hundred and twenty-two; you are amongst the lucky few.']);</code></pre>
-        <p class="fragment" data-fragment-index="1">Return a string <span class="fragment" data-fragment-index="3">of the the English word equivalents</span><br />of the surviving elements <span class="fragment" data-fragment-index="2">(numbers)</span> in an array<br />after chopping off n elements from the head.<br /><span class="fragment" data-fragment-index="4">The numbers must be listed from last to first.</code><br /><span class="fragment" data-fragment-index="5">The string should be finished with a phrase<br />that rhymes with the last number listed.</span></p>
+          <p class="coder">
+            <span>it 'P1:</span><span class="fragment"> [TC33587.3]</span><span class="fragment"> Add a new Group in AdminUI', -></span>
+          </p>
         </section>
 
         <section>
-          <p><a href="https://bitbucket.org/inindca/admin-ui/src/b7fc0c9722c0001a562d574251811bd8062d6772/bin/update-tcdb.sh">admin-ui/bin/update-tcdb.sh</a></p>
+          <p class="coder">
+            <span>## Description: </span><span class="fragment"> TCDB description goes here.</span></span><br />
+            <span class="fragment">## Assumption: </span><span class="fragment"> Any assumptions go here.&nbsp;&nbsp;&nbsp;&nbsp;</span></span><br />
+          </p>
+        </section>
+
+        <section>
+          <p class="coder">
+            <span>## Action step.</span><span class="fragment">;</span><span class="fragment"> Expectation.;</span><span class="fragment"> Optional comment.</span>
+          </p>
+        </section>
+
+        <section>
+          <h2>TODO</h2>
+          <ul>
+            <li class="fragment">Generate new TCs and populate with data on first pass</li>
+            <li class="fragment">Better syntax error handling</li>
+            <li class="fragment">Generate/update test suites</li>
+            <li class="fragment">Automate workflow</li>
+            <li class="fragment">Option to run per suite</li>
+            <li class="fragment">Generalize and package for other teams</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3><a href="https://bitbucket.org/inindca/admin-ui/src/631ce1a5e897ece16c27df1b34b341e04c6f0cdc/bin/update-tcdb.sh">admin-ui/bin/update-tcdb.sh</a></h3>
+          <h3><a href="https://bitbucket.org/inindca/admin-ui/src/4d311a874b53ded12a27317baf5d4591cded1903/test/README.md">admin-ui/test/README.md</a></h3>
         </section>
 
       </div>
