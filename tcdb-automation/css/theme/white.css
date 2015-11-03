@@ -263,11 +263,23 @@ body {
  * COLORS AND SIZE
  * ********************************************/
 .reveal .code-red {
-  color: red;
+  color: crimson;
   font-weight: bold; }
 
 .reveal .code-grey {
   color: #CCC; }
+
+.reveal .code-green {
+  color: seagreen; }
+
+.reveal .code-blue {
+  color: steelblue; }
+
+.reveal .code-teal {
+  color: teal; }
+
+.reveal .code-yellow {
+  color: gold; }
 
 .reveal .lowercase {
   text-transform: lowercase; }

@@ -50,19 +50,15 @@
         <!-- </section> -->
 
         <section>
-          <pre><code>
-describe 'directory.groupsTest', ->
-
-  it 'P1: [TC33587.3] Add a new Group in AdminUI', ->
+          <pre><code class="code-grey">
+describe 'directory.groupsTest', -></code>
+<code>  it 'P1: [TC33587.3] Add a new Group in AdminUI', ->
     ## Description: Tests ability to create groups in AdminUI.
     ## Assumption: AdminUI page is loaded.
 
-    ## Navigate to '/directory/groups' to load Groups page.; Page should load.
-    HelpMe.loadWebPage '/directory/groups'
+    ## Navigate to '/directory/groups'; Page should load.</code><code class="code-grey">    HelpMe.loadWebPage '/directory/groups'
     expect(PO.pageAnchor.isPresent()).to.eventually.be.true
-
-    ## Click Add Group button.; Add Group dialog opens.
-    HelpMe.clickWhenClickable PO.addNewGroupButton
+    </code><code>    ## Click Add Group button.; Add Group dialog opens.</code><code class="code-grey">    HelpMe.clickWhenClickable PO.addNewGroupButton
     expect(PO.createGroupButton.isEnabled()).to.eventually.be.false
           </code></pre>
         </section>
@@ -80,22 +76,46 @@ describe 'directory.groupsTest', ->
         <section>
           <h2>Architecture</h2>
           <ul>
-            <li class="fragment">Check for new TCs</li>
+            <li class="fragment">Check for new TCs — [TC]</li>
             <li class="fragment">Generate new TC numbers</li>
-            <li class="fragment">Parse all TC comments</li>
+            <li class="fragment">Write new numbers to file(s)</li>
+            <li class="fragment">Parse all TC comments — [TC33459.1]</li>
             <li class="fragment">Diff with current version in TCDB</li>
             <li class="fragment">Update necessary TCs</li>
+            <li class="fragment">Write new version numbers to file(s)</li>
             <li class="fragment">Bump version number of Test Plan</li>
           </ul>
         </section>
 
         <section>
+          <pre><code class="code-grey">
+admin-ui develop % ./bin/update-tcdb.sh</code><code>Requesting access to TCDB...
+Parsing tcdb comments...</code><code class="code-red">WARNING: Missing expectation in TC33590</code><code>acdSkillsTest.coffee already up-to-date.
+fieldsTest.coffee already up-to-date.</code><code class="code-blue">Updating TC44643.4 to version 5
+Updating TC34583.1 to version 1</code><code class="code-green">groupsTest.coffee has been updated with new TC versions.</code><code>locationsTest.coffee already up-to-date.</code><code class="code-blue">New test case added: 68943</code><code class="code-green">webhooksTest.coffee has been assigned 1 new TC number.</code><code class="code-green">TEST PLAN 319 UPDATED</code><code>
+Total automated test cases: 1382
+Total new test cases: 1
+Total updated test cases: 2
+          </code></pre>
+        </section>
+
+        <section>
           <h2>Parsing Comments</h2>
+          <p class="coder">##</p>
+          <p>double octothorp &nbsp;&nbsp;/&nbsp;&nbsp; double pound &nbsp;&nbsp;/&nbsp;&nbsp; double hashtag<br/>&nbsp;</p>
+          <p class="fragment coder">//## TCDB comments</p>
+          <p class="fragment coder">/// TCDB comments</p>
         </section>
 
         <section>
           <p class="coder">
-            <span>it 'P1:</span><span class="fragment"> [TC33587.3]</span><span class="fragment"> Add a new Group in AdminUI', -></span>
+            <span>it 'P1:</span><span class="fragment"> [TC33587.3]</span><span class="fragment"> Add a new group in AdminUI', -></span>
+          </p>
+        </section>
+
+        <section>
+          <p class="coder">
+            <span>it 'P3:</span><span class="fragment"> [TC]</span><span class="fragment"> Title of a new test case', -></span>
           </p>
         </section>
 
@@ -113,19 +133,35 @@ describe 'directory.groupsTest', ->
         </section>
 
         <section>
+          <pre><code class="code-grey">
+describe 'giphy search', -></code>
+<code>  it 'P1: [TC42424.2] Searching giphy for cats', ->
+    ## Description: Find all the cats.
+    ## Assumption: You are an internet cat lover.
+
+    ## Navigate to 'giphy.com'; Search field should be visible.; </code><code class="code-grey">    browser.get 'http://giphy.com'
+    expect(PO.searchBox.isPresent()).to.eventually.be.true
+    </code><code>    ## Type 'cat' into the search field and click the magnifier button.; New page loads with gifs of cats.; Don't you just love cats?!</code><code class="code-grey">    PO.searchBox.sendKeys 'cat'
+    PO.magnifierButton.click()
+    expect(PO.catsCatsCats.isDisplayed()).to.eventually.be.true
+          </code></pre>
+        </section>
+
+        <section><img class="stretch" src="img/cat-ninja-jump.gif" alt=""></section>
+
+        <section>
           <h2>TODO</h2>
           <ul>
             <li class="fragment">Generate new TCs and populate with data on first pass</li>
-            <li class="fragment">Better syntax error handling</li>
             <li class="fragment">Generate/update test suites</li>
-            <li class="fragment">Automate workflow</li>
+            <li class="fragment">Automate script run workflow</li>
             <li class="fragment">Option to run per suite</li>
             <li class="fragment">Generalize and package for other teams</li>
           </ul>
         </section>
 
         <section>
-          <h3><a href="https://bitbucket.org/inindca/admin-ui/src/631ce1a5e897ece16c27df1b34b341e04c6f0cdc/bin/update-tcdb.sh">admin-ui/bin/update-tcdb.sh</a></h3>
+          <h3><a href="https://bitbucket.org/inindca/admin-ui/src/8541bdbc2fa3f8bb47e0cb9f704e8037c914eb9d/bin/update-tcdb.sh?at=develop&fileviewer=file-view-default">admin-ui/bin/update-tcdb.sh</a></h3>
           <h3><a href="https://bitbucket.org/inindca/admin-ui/src/4d311a874b53ded12a27317baf5d4591cded1903/test/README.md">admin-ui/test/README.md</a></h3>
         </section>
 
