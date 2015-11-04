@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>TCDB Automation</title>
+    <title>TCDB Integration</title>
 
     <meta name="description" content="How admin-ui avoids the tcdb ui">
     <meta name="author" content="Branden Byers">
@@ -41,7 +41,7 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1>TCDB Automation</h1>
+          <h1>TCDB integration</h1>
         </section>
 
         <!-- <section> -->
@@ -88,8 +88,7 @@ describe 'directory.groupsTest', -></code>
         </section>
 
         <section>
-          <pre><code class="code-grey">
-admin-ui develop % ./bin/update-tcdb.sh</code><code>Requesting access to TCDB...
+          <pre><code class="code-grey">admin-ui develop % ./bin/update-tcdb.sh</code><code>Requesting access to TCDB...
 Parsing tcdb comments...</code><code class="code-red">WARNING: Missing expectation in TC33590</code><code>acdSkillsTest.coffee already up-to-date.
 fieldsTest.coffee already up-to-date.</code><code class="code-blue">Updating TC44643.4 to version 5
 Updating TC34583.1 to version 1</code><code class="code-green">groupsTest.coffee has been updated with new TC versions.</code><code>locationsTest.coffee already up-to-date.</code><code class="code-blue">New test case added: 68943</code><code class="code-green">webhooksTest.coffee has been assigned 1 new TC number.</code><code class="code-green">TEST PLAN 319 UPDATED</code><code>
@@ -140,9 +139,9 @@ describe 'giphy search', -></code>
     ## Assumption: You are an internet cat lover.
 
     ## Navigate to 'giphy.com'; Search field should be visible.; </code><code class="code-grey">    browser.get 'http://giphy.com'
-    expect(PO.searchBox.isPresent()).to.eventually.be.true
-    </code><code>    ## Type 'cat' into the search field and click the magnifier button.; New page loads with gifs of cats.; Don't you just love cats?!</code><code class="code-grey">    PO.searchBox.sendKeys 'cat'
-    PO.magnifierButton.click()
+    expect(PO.searchField.isPresent()).to.eventually.be.true
+    </code><code>    ## Type 'cat' into the search field and click the search button.; New page loads with gifs of cats.; Don't you just love cats?!</code><code class="code-grey">    PO.searchField.sendKeys 'cat'
+    PO.searchButton.click()
     expect(PO.catsCatsCats.isDisplayed()).to.eventually.be.true
           </code></pre>
         </section>
