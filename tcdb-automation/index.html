@@ -74,11 +74,11 @@ describe 'directory.groupsTest', -></code>
         </section>
 
         <section>
-          <h2>Architecture</h2>
+          <h2>How We Do</h2>
           <ul>
             <li class="fragment">Check for new TCs — [TC]</li>
             <li class="fragment">Generate new TC numbers</li>
-            <li class="fragment">Write new numbers to file(s)</li>
+            <li class="fragment">Write new TC numbers to file(s)</li>
             <li class="fragment">Parse all TC comments — [TC33459.1]</li>
             <li class="fragment">Diff with current version in TCDB</li>
             <li class="fragment">Update necessary TCs</li>
@@ -147,6 +147,23 @@ describe 'giphy search', -></code>
         </section>
 
         <section><img class="stretch" src="img/cat-ninja-jump.gif" alt=""></section>
+
+        <section>
+          <pre><code class="code-grey">
+describe 'giphy search', -></code>
+<code>  it 'P1: [TC42424.2] Searching giphy for dogs', ->
+    ## Description: Find all the dogs.
+    ## Assumption: You are an internet dog lover.
+
+    ## Navigate to 'giphy.com'; Search field should be visible.; </code><code class="code-grey">    browser.get 'http://giphy.com'
+    expect(PO.searchField.isPresent()).to.eventually.be.true
+    </code><code>    ## Type 'dog' into the search field and click the search button.; New page loads with gifs of dogs.; Don't you just love dogs?!</code><code class="code-grey">    PO.searchField.sendKeys 'dog'
+    PO.searchButton.click()
+    expect(PO.wholetthedogsout.isDisplayed()).to.eventually.be.true
+          </code></pre>
+        </section>
+
+        <section><img class="stretch" src="img/cool-dog-sunglasses-swing.gif" alt=""></section>
 
         <section>
           <h2>TODO</h2>
