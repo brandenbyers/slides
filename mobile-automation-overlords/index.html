@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>I, For One, Welcome Our New Mobile Automation Overlords</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section class="blue-back">
+          <img class="stretch" src="img/title.svg" alt="">
+        </section>
+
+        <section>
+          <img class="stretch" src="img/ios-collaborate.png" alt="">
+        </section>
+
+        <section>
+          <img class="stretch" src="img/iphone-cpr.svg" alt="">
+          <h2>Mobile Test Resuscitation</h2>
+        </section>
+
+        <section><img class="stretch" src="img/12-plus-hours.svg" alt=""></section>
+
+        <section><img class="stretch" src="img/fail-chart.svg" alt=""></section>
+
+        <section><img class="stretch" src="img/single-threaded.svg" alt=""></section>
+
+        <section data-background-image="img/pile-o-phones.jpg">
+          <h1 class="font-red-stroke">Mucho Hardware!</h1>
+        </section>
+
+        <section>
+          <h2>TEST CODE &nbsp;&nbsp;|&nbsp;&nbsp; FEATURE CODE</h2>
+        </section>
+
+        <section>
+          <blockquote>
+            "Non-deterministic tests have two problems, firstly they are useless, secondly they are a virulent infection that can completely ruin your entire test suite."
+          </blockquote>
+          <p><a href="http://www.martinfowler.com/articles/nonDeterminism.html">- Martin Fowler, Chief Scientist, ThoughtWorks</a></p>
+        </section>
+
+        <section><img class="stretch" src="img/bunch-o-tests.svg" alt=""></section>
+
+        <section><img class="stretch" src="img/bunch-o-ignored-tests.svg" alt=""></section>
+
+        <section>
+          <img class="stretch" src="img/feedback-loop-slow.svg" alt="">
+          <h2>Slow Feedback Loop</h2>
+        </section>
+
+        <section>
+          <h2>What's JavaScript?</h2>
+          <img class="stretch" src="img/javascript.svg" alt="">
+        </section>
+
+        <section>
+          <h2>bad tests can = worse than no tests</h2>
+        </section>
+
+        <section>
+          <h1>Who tests the tests?</h1>
+        </section>
+
+        <section><img class="stretch" src="img/ice-cream-cone.svg" alt=""></section>
+
+        <section><img class="stretch" src="img/ice-cream-cone-broken.svg" alt=""></section>
+
+        <section><img class="stretch" src="img/test-pyramid.svg" alt=""></section>
+
+        <section><img class="stretch" src="img/multi-threaded.svg" alt=""></section>
+
+        <section>
+          <img class="stretch" src="img/aws.svg" alt="">
+          <img src="img/device-farm.png" alt="">
+        </section>
+
+        <section class="blue-back"><img class="stretch" src="img/branden-ken-robots.svg" alt=""></section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: false,
+      progress: false,
+      history: true,
+      center: true,
+      width: 1280,
+      height: 720,
+      margin: 0,
+      transition: 'none', // none/fade/slide/convex/concave/zoom
+      backgroundTransition: 'none',
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+    </script>
+
+</body>
+</html>
