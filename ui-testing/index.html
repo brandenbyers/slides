@@ -30,7 +30,7 @@
 
         <section>
           <h1>XCTest UI Testing</h1>
-          <h6>Apple's New Automation Rockstar</h6>
+          <h6>Apple's New-ish Automation Rockstar</h6>
         </section>
 
         <section>
@@ -39,12 +39,12 @@
 
 class exampleTests: XCTestCase {
 
-  func testThisExample() {
+  func testEmojiTranslation() {
     let app = XCUIApplication()
     app.launch()
-    greetingTextField = app.textFields["Enter Greeting"]
-    greetingTextField.tap()
-    greetingTextField.typeText("Hello World\n")
+    emojiTextField = app.textFields["TranslateEmojiField"]
+    emojiTextField.tap()
+    emojiTextField.typeText("👋🌎\n")
 
     XCTAssert(app.tables.staticTexts["Hello World"].exists, "😞")
   }
@@ -54,8 +54,136 @@ class exampleTests: XCTestCase {
         </section>
 
         <section>
-          <img src="img/curve-test.svg" alt="">
+          <svg width="100%" height="100%" viewBox="0 0 1280 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+              <g id="Triangle" transform="matrix(1,0,0,1,-160.131,-46.3856)">
+                  <path d="M771.873,142.415L1096.56,656.788L447.19,656.788L771.873,142.415Z" style="fill:none;stroke-width:2px;stroke:rgb(82,175,211);"/>
+              </g>
+              <g transform="matrix(7.50061,0,0,7.50061,-3029.16,-3797.31)">
+                  <g id="unit">
+                      <text x="461.908px" y="578.337px" style="font-family:'LondrinaSolid-Regular', 'Londrina Solid';font-size:12px;fill:rgb(172,187,198);">Unit T<tspan x="487.984px 492.964px 498.964px 503.596px " y="578.337px 578.337px 578.337px 578.337px ">ests</tspan></text>
+                  </g>
+              </g>
+              <g class="fragment" id="integration" transform="matrix(1,0,0,1,0,-49)">
+                  <g transform="matrix(3.65568,0,0,3.65568,-1161.48,-1734.9)">
+                      <text x="459.01px" y="578.337px" style="font-family:'LondrinaSolid-Regular', 'Londrina Solid';font-size:12px;fill:rgb(172,187,198);">Integra<tspan x="493.726px 498.934px 501.382px " y="578.337px 578.337px 578.337px ">tio</tspan>n</text>
+                  </g>
+                  <g transform="matrix(0.876416,0,0,1,76.7513,-43.8742)">
+                      <path d="M384.063,503.435L836.919,503.435" style="fill:none;stroke-width:2.13px;stroke:rgb(82,175,211);"/>
+                  </g>
+                  <g transform="matrix(0.32559,0,0,1,412.896,-241.196)">
+                      <path d="M384.063,503.435L836.919,503.435" style="fill:none;stroke-width:2.69px;stroke:rgb(82,175,211);"/>
+                  </g>
+              </g>
+              <g transform="matrix(2.52531,0,0,2.52531,-614.84,-1276.32)">
+                  <g class="fragment" id="e2e">
+                      <text x="477.274px" y="578.337px" style="font-family:'LondrinaSolid-Regular', 'Londrina Solid';font-size:12px;fill:rgb(172,187,198);">e2e</text>
+                  </g>
+              </g>
+          </svg>
         </section>
+
+        <section>
+          <h1>Stability</h1>
+          <p class="fragment">No longer crashes every other test</p>
+        </section>
+
+        <section>
+          <h2>UIAutomation vs XCTest</h2>
+          <ui>
+            <li class="fragment">UIAutomation == JavaScript</li>
+            <li class="fragment">XCTest == Swift or Obj-c</li>
+            <li class="fragment">UIAutomation Deprecated</li>
+          </ui>
+        </section>
+
+        <section>
+          <h2><strike>UIAutomation vs</strike> XCTest</h2>
+          <ui>
+            <li>UIAutomation == JavaScript</li>
+            <li>XCTest == Swift or Obj-c</li>
+            <li>UIAutomation Deprecated</li>
+          </ui>
+        </section>
+
+        <section>
+          <h2>Alternatives</h2>
+          <ul>
+            <li>KIF</li>
+            <li>Calabash</li>
+          </ul>
+          <p>&nbsp;</p>
+          <h6 class="fragment">must wait for support of new iOS releases</h6>
+        </section>
+
+        <section>
+          <!-- TODO: Add image of record button -->
+          <!-- TODO: Add second slide with example of recording output -->
+          <h2>Recording</h2>
+          <ul>
+            <li class="fragment">Doesn't always work</li>
+            <li class="fragment">Crashes semi-regularly</li>
+            <li class="fragment">Good place to start</li>
+          </ul>
+        </section>
+
+        <!-- TODO: Add info about how XCTest uses accessibility identifiers -->
+
+<!-- # Limitations -->
+<!--     &#45; can't background app (no home button and return) -->
+<!--     &#45; limited control over user behavior -->
+<!--     &#45; slow -->
+<!--     &#45; timing doesn't necessarily mirror user behavior -->
+<!--     &#45; dependent on accessibility -->
+<!--     &#45; network connections can be flaky if not mocked (mocking is a challenge) -->
+<!--     &#45; don't depend on test order, independent -->
+<!--      -->
+<!-- # XCUIElement -->
+<!--     &#45; XCUIElement -->
+<!--     &#45; XCUIElementQuery -->
+<!--     &#45; Key Values -->
+<!--       &#45; table.identifier = depending on element, often nothings -->
+<!--       &#45; table.label = label text -->
+<!--       &#45; table.value -->
+<!--     &#45; `let cells = table.cells.containingType(.StaticText, identifier:"Generic Item")` -->
+<!--     &#45; `let firstCell = cells.elementBoundByIndex(0)` -->
+<!--     &#45; test will fail if multiple matches are found -->
+<!--  -->
+<!-- # launchArguments -->
+<!--  -->
+<!--     ``` -->
+<!--     let app = XCUIApplication() -->
+<!--     app.launchArguments = [ "USE_MOCK_SERVER" ] -->
+<!--     app.launch() -->
+<!--     ``` -->
+<!--  -->
+<!-- # launchEnvironment -->
+<!--     &#45; app.launchEnvironment = ["":""] -->
+<!--     &#45; mocking network requests -->
+<!--     &#45; chance to dive deeper than user -->
+<!--  -->
+<!-- # Intelligent Waiting -->
+<!--     &#45; no sleeping! -->
+<!--  -->
+<!-- ## iPhone vs iPad -->
+<!--  -->
+<!-- ``` -->
+<!--             if (XCUIApplication().windows.elementBoundByIndex(0).horizontalSizeClass == .Compact || XCUIApplication().windows.elementBoundByIndex(0).verticalSizeClass == .Compact) { -->
+<!--                 // iPhone -->
+<!--                 signOutButton = XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).elementBoundByIndex(count).navigationBars["Settings"].buttons["SignOutButton"] -->
+<!-- //                app.buttons["SignOutButton"] -->
+<!--             } else { -->
+<!--                 // iPad -->
+<!--                 signOutButton = XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).elementBoundByIndex(count + 1).navigationBars["Settings"].buttons["SignOutButton"] -->
+<!--             } -->
+<!-- ``` -->
+<!--  -->
+<!-- # Resources -->
+<!--     &#45; Apple's API Reference: https://developer.apple.com/reference/xctest/ -->
+<!--     &#45; session 406 (2015), UI Testing in Xcode (https://developer.apple.com/videos/play/wwdc2015/406/) -->
+<!--     &#45; session 409 (2016), Advanced Testing and Continuous Integration (https://developer.apple.com/videos/play/wwdc2016/409/) -->
+<!--     &#45; AWS Device Farm -->
+<!--     &#45; Hands&#45;On Mobile App Testing by Daniel Knott -->
+<!--     &#45; proxy server embeded in app = https://github.com/swisspol/GCDWebServer -->
 
       </div>
     </div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1280 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Triangle" transform="matrix(1,0,0,1,-160.131,-46.3856)">
+        <path d="M771.873,142.415L1096.56,656.788L447.19,656.788L771.873,142.415Z" style="fill:none;stroke-width:2px;stroke:rgb(82,175,211);"/>
+    </g>
+    <g transform="matrix(7.50061,0,0,7.50061,-3029.16,-3797.31)">
+        <g id="unit">
+            <text x="461.908px" y="578.337px" style="font-family:'LondrinaSolid-Regular', 'Londrina Solid';font-size:12px;fill:rgb(172,187,198);">Unit T<tspan x="487.984px 492.964px 498.964px 503.596px " y="578.337px 578.337px 578.337px 578.337px ">ests</tspan></text>
+        </g>
+    </g>
+    <g class="fragment" id="integration" transform="matrix(1,0,0,1,0,-49)">
+        <g transform="matrix(3.65568,0,0,3.65568,-1161.48,-1734.9)">
+            <text x="459.01px" y="578.337px" style="font-family:'LondrinaSolid-Regular', 'Londrina Solid';font-size:12px;fill:rgb(172,187,198);">Integra<tspan x="493.726px 498.934px 501.382px " y="578.337px 578.337px 578.337px ">tio</tspan>n</text>
+        </g>
+        <g transform="matrix(0.876416,0,0,1,76.7513,-43.8742)">
+            <path d="M384.063,503.435L836.919,503.435" style="fill:none;stroke-width:2.13px;stroke:rgb(82,175,211);"/>
+        </g>
+        <g transform="matrix(0.32559,0,0,1,412.896,-241.196)">
+            <path d="M384.063,503.435L836.919,503.435" style="fill:none;stroke-width:2.69px;stroke:rgb(82,175,211);"/>
+        </g>
+    </g>
+    <g transform="matrix(2.52531,0,0,2.52531,-614.84,-1276.32)">
+        <g class="fragment" id="e2e">
+            <text x="477.274px" y="578.337px" style="font-family:'LondrinaSolid-Regular', 'Londrina Solid';font-size:12px;fill:rgb(172,187,198);">e2e</text>
+        </g>
+    </g>
+</svg>
