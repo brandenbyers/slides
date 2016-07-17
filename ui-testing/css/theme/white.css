@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,800,200);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 @import url(https://fonts.googleapis.com/css?family=Londrina+Solid);
 /**
  * White theme for reveal.js. This is the opposite of the 'black' theme.
@@ -27,7 +27,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #4A86DA;
+  background: #52AFD3;
   text-shadow: none; }
 
 .reveal .slides > section, .reveal .slides > section > section {
@@ -59,6 +59,11 @@ body {
 
 .reveal h4 {
   font-size: 1em; }
+
+.reveal h6 {
+  font-size: 0.75em;
+  font-weight: 400;
+  font-family: 'Indie Flower', Helvetica, sans-serif; }
 
 /*********************************************
  * OTHER
@@ -144,8 +149,7 @@ body {
   padding: 5px;
   overflow: hidden;
   word-wrap: break-word;
-  background: #FFFFFF;
-  color: #000000; }
+  background: none; }
 
 .reveal table {
   margin: auto;

@@ -29,7 +29,32 @@
       <div class="slides">
 
         <section>
-          <h1>XCTest</h1>
+          <h1>XCTest UI Testing</h1>
+          <h6>Apple's New Automation Rockstar</h6>
+        </section>
+
+        <section>
+          <h1>What is XCTest?</h1>
+          <pre><code>import XCTest
+
+class exampleTests: XCTestCase {
+
+  func testThisExample() {
+    let app = XCUIApplication()
+    app.launch()
+    greetingTextField = app.textFields["Enter Greeting"]
+    greetingTextField.tap()
+    greetingTextField.typeText("Hello World\n")
+
+    XCTAssert(app.tables.staticTexts["Hello World"].exists, "😞")
+  }
+
+}</code></pre>
+
+        </section>
+
+        <section>
+          <img src="img/curve-test.svg" alt="">
         </section>
 
       </div>
