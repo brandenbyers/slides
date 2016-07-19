@@ -41,7 +41,7 @@ body {
   margin: 0 0 20px 0;
   color: #C6D4DC;
   font-family: 'Londrina Solid', Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2;
   letter-spacing: normal;
   /* text-transform: uppercase; */
@@ -192,15 +192,21 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #000000;
+  color: #C6D4DC;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #262626;
+  color: #C93C9A;
   text-shadow: none;
+  border: none; }
+
+.reveal a:focus {
+  color: #C93C9A;
+  text-shadow: none;
+  outline: 0px solid transparent;
   border: none; }
 
 .reveal .roll span:after {
