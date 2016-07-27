@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>XCTest UI-Testing In-Depth</title>
+    <title>XCTest UI-Testing</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -30,7 +30,9 @@
 
         <section>
           <h1>XCTest UI Testing</h1>
-          <h6>Apple's New-ish Automation Rockstar</h6>
+          <h6>😻 and 🙀 and 😹</h6>
+          <p>&nbsp;</p>
+          <h6>brandenbyers.com/slides/ui-testing/</h6>
         </section>
 
         <section>
@@ -82,6 +84,10 @@ class exampleTests: XCTestCase {
           </svg>
         </section>
 
+        <section><img class="stretch" src="img/ice-cream-cone.svg" alt=""></section>
+
+        <section><img class="stretch" src="img/ice-cream-cone-broken.svg" alt=""></section>
+
         <section>
           <h1>Stability</h1>
           <p class="fragment">No longer crashes every other test</p>
@@ -116,6 +122,41 @@ class exampleTests: XCTestCase {
         </section>
 
         <section>
+          <h1>Limitations</h1>
+        </section>
+
+        <section>
+          <h3>Can't background apps</h3>
+          <pre><code>    XCUIDevice.sharedDevice().pressButton(XCUIDeviceButton.Home)</code><code class="fragment">    XCUIDevice.sharedDevice().pressButton(XCUIDeviceButton.VolumeUp)
+    XCUIDevice.sharedDevice().pressButton(XCUIDeviceButton.VolumeDown)</code></pre>
+        </section>
+
+        <section>
+          <h3>Can't do everything a user can do</h3>
+          <!-- TODO: Show gif examples of things that can't be done -->
+        </section>
+
+        <section>
+          <h3>Timing doesn't mirror user behavior</h3>
+          <!-- TODO: Show gif of how it doesn't mirror behavior -->
+        </section>
+
+        <section>
+          <h3>Dependent on accessibility</h3>
+          <!-- TODO: Show accessiblity code and image of storyboard, then another slide of weird selectors needed -->
+        </section>
+
+        <section>
+          <h3>Random test order</h3>
+          <!-- TODO: show test suite with dependencies between test cases, no no, don't do that -->
+        </section>
+
+        <section>
+          <img src="img/slow.gif" alt="">
+          <h3>Slow</h3>
+        </section>
+
+        <section>
           <!-- TODO: Add image of record button -->
           <!-- TODO: Add second slide with example of recording output -->
           <h2>Recording</h2>
@@ -147,16 +188,14 @@ collectionViewsQuery.staticTexts["Help!"].tap()
         <!-- TODO: Add slide with correct identifier and easier selection -->
 
         <section>
-          <h2>Limitations</h2>
-          <ul>
-            <li class="fragment">Can't background app</li>
-            <li class="fragment">Can't do everything a user can do</li>
-            <li class="fragment">Timing doesn't mirror user behavior</li>
-            <li class="fragment">Dependent on accessibility</li>
-            <li class="fragment">Random test order</li>
-            <li class="fragment">Slow</li>
-          </ul>
+          <h2>Simulator Keyboard Bug</h2>
+            <pre><code></code></pre>
         </section>
+
+        <!-- <section> -->
+        <!--   <h2>XCUIElement</h2> -->
+        <!--   <pre><code></code></pre> -->
+        <!-- </section> -->
 
 <!-- # XCUIElement -->
 <!--     &#45; XCUIElement -->
@@ -197,9 +236,32 @@ if (XCUIApplication().windows.elementBoundByIndex(0).
 }</code></pre>
         </section>
 
+        <section>
+          <h2>launchArguments</h2>
+          <pre><code>
+          let app = XCUIApplication()
+          app.launchArguments = [ "USE_MOCK_SERVER" ]
+          app.launch()
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>launchEnvironment</h2>
+          <pre><code>
+          let app = XCUIApplication()
+          app.launchEnvironment = ["testEnv" : "value"]
+          app.launch()
+          </code></pre>
+        </section>
+
         <!-- TODO: Remove this from github version -->
 
         <section data-background-image="img/color-bars.gif">
+          <h2>DEMO</h2>
+        </section>
+
+        <section>
+          <p>po print(app.debugDescription) vs print(app.debugDescription)</p>
         </section>
 
         <section>
@@ -207,10 +269,11 @@ if (XCUIApplication().windows.elementBoundByIndex(0).
             <p><a href="https://developer.apple.com/reference/xctest/">Apple&#8217;s API Reference</a><br/>
             <a href="https://developer.apple.com/videos/play/wwdc2016/409/">WWDC 2016 Session 409: Advanced Testing and Continuous Integration</a><br/>
             <a href="https://developer.apple.com/videos/play/wwdc2015/406/">WWDC 2015 Session 406: UI Testing in Xcode</a><br/>
+            <a href="http://qualitytesting.tumblr.com/post/144462182209/xctest-and-the-page-object-model">Page Object Model</a>
+            <a href="http://masilotti.com/ui-testing-stub-network-data/">UI Testing Stub Network Data</a>
             <a href="https://aws.amazon.com/device-farm/">AWS Device Farm</a></li><br/>
-            <a href="http://adventuresinqa.com/hands-on-mobile-app-testing/">Hands-On Mobile Testing by Daniel Knott</a></p>         <ul>
+            <a href="http://adventuresinqa.com/hands-on-mobile-app-testing/">Hands-On Mobile Testing by Daniel Knott</a></p>
 <!--     &#45; proxy server embeded in app = https://github.com/swisspol/GCDWebServer -->
-          </ul>
         </section>
 
         <section><img src="img/last-slide.svg" alt=""></section>
