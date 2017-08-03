@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 798 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="why.-me" transform="matrix(8.66195,0,0,8.66195,-2141.83,-2276.97)">
+        <text x="263.468px" y="294.74px" style="font-family:'PTSans-Bold', 'PT Sans', sans-serif;font-weight:700;font-size:16px;">Why<tspan x="293.052px " y="294.74px "> </tspan>me?</text>
+    </g>
+    <g id="midwestJS" transform="matrix(1.6967,-0.698011,0.698011,1.6967,-577.67,298.395)">
+        <text x="350.675px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:none;">midwestJS</text>
+        <text x="379.644px" y="77.947px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:none;">2015</text>
+        <text x="350.675px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:rgb(232,87,100);stroke:rgb(232,87,100);stroke-width:1.09px;">midwestJS</text>
+        <text x="379.644px" y="77.947px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:rgb(232,87,100);stroke:rgb(232,87,100);stroke-width:1.09px;">2015</text>
+    </g>
+    <g id="fermentation" transform="matrix(2.33863,0.360345,-0.360345,2.33863,-721.536,41.9703)">
+        <text x="343.011px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:rgb(232,87,100);">fermentation</text>
+    </g>
+    <g id="toastmasters" transform="matrix(2.19404,0.65547,-0.65547,2.19404,-300.588,-5.76247)">
+        <text x="336.144px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:rgb(232,87,100);">Toastmasters</text>
+    </g>
+    <g id="localMeetups" transform="matrix(2.6988,0.520852,-0.520852,2.6988,-574.728,-254.364)">
+        <text x="381.089px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:rgb(232,87,100);">local</text>
+        <text x="360.12px" y="77.947px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:rgb(232,87,100);">meetups</text>
+    </g>
+    <g id="mc" transform="matrix(1.7721,0.0485801,-0.0485801,1.7721,-53.3192,193.284)">
+        <text x="353.175px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;">MC @ local</text>
+        <text x="344.698px" y="77.947px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;">conferences</text>
+    </g>
+    <g id="teals" transform="matrix(2.41523,-0.28977,0.28977,2.41523,-689.937,400.421)">
+        <text x="327.355px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;fill:none;">TEALS Volunteer</text>
+        <text x="327.355px" y="61.557px" style="font-family:'IndieFlower', 'Indie Flower';font-size:16px;stroke:black;stroke-width:0.82px;">TEALS Volunteer</text>
+    </g>
+</svg>
