@@ -36,15 +36,59 @@
         </section>
 
         <section>
+          <h1>Multi-App Testing</h1>
+        </section>
+
+        <section>
+          <pre>XCUIApplication()</pre>
+        </section>
+
+        <section>
+          <pre>XCUIApplication(bundleIdentifier: "")</pre>
+        </section>
+
+        <section>
+          <ul>
+            <li>Extensions</li>
+            <li>App Groups</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Not just your own apps...</p>
+        </section>
+
+        <section>
+          <pre>XCUIApplication(bundleIdentifier: "com.apple.Preferences")</pre>
+        </section>
+
+        <section><img class="stretch" src="img/network-link-conditioner.gif" alt="XCTest toggle network conditioner"></section>
+
+        <section>
           <h3>Improved Querying</h3>
         </section>
 
         <section>
-          <p>First Match API</p>
+          <h2>XCTest Queries</h2>
+          <p class="fragment">Queries find elements</p>
+          <p class="fragment">Queries use Accessibility Data</p>
+          <p class="fragment">Test requests a snapshot</p>
+          <p class="fragment">App captures/serializes snapshot</p>
+          <p class="fragment">App sends data back to test</p>
         </section>
 
         <section>
-          <h1>Multi-App Testing</h1>
+          <h3>Skip the Snapshot</h3>
+          <p class="fragment">Order of Magnitude Faster</p>
+          <p class="fragment">Eliminates Memory Spikes Completely</p>
+        </section>
+
+        <section>
+          <h2>First Match</h2>
+          <p class="fragment">Removes non-unique query protection</p>
+          <pre class="fragment">app.buttons.firstMatch</pre>
+          <pre class="fragment">app.buttons["Done"].firstMatch</pre>
+          <pre class="fragment">app.navigationBars.buttons["Done"].firstMatch</pre>
         </section>
 
         <section>
@@ -52,7 +96,35 @@
         </section>
 
         <section>
-          <h1>Testing in Parallel</h1>
+          <h2>Activities</h2>
+        </section>
+
+        <section data-background-video="img/sky-guide-toggle-prefs.mov" data-background-video-loop data-background-video-muted></section>
+
+        <section><img class="stretch" src="img/code-no-activity.png" alt=""></section>
+        <section><img class="stretch" src="img/sky-guide-no-activity.png" alt=""></section>
+
+        <section><img class="stretch" src="img/code-with-activity.png" alt=""></section>
+        <section><img class="stretch" src="img/code-just-activity.png" alt=""></section>
+        <section><img class="stretch" src="img/sky-guide-with-activity.png" alt=""></section>
+
+        <section>
+          <h2>Screenshots</h2>
+          <h2>&amp; Attachments</h2>
+        </section>
+
+        <section><img class="stretch" src="img/screenshots-galaxies.png" alt=""></section>
+
+        <section>
+          <h1>PARALLEL</h1>
+          <h1>PARALLEL</h1>
+          <h1>PARALLEL</h1>
+          <h1>PARALLEL</h1>
+          <h1>PARALLEL</h1>
+        </section>
+
+        <section>
+          <pre>xcodebuild -scheme "testerUITests" -destination 'platform=iOS Simulator,name=iPhone X,OS=11.0'-destination 'platform=iOS Simulator,name=iPhone 7 Plus,OS=11.0' build test</pre>
         </section>
 
         <section>
@@ -71,13 +143,6 @@
             <li>Jenkins, Travis, Circle</li>
           </ul>
         </section>
-
-        <section>
-          <h2>Bots!</h2>
-        </section>
-
-        <!--TODO: Performance Testing with XCTest UI-->
-        <!--TODO: -->
 
         <section>
           <h1>XCTestWaiter</h1>
