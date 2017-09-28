@@ -1,3 +1,3 @@
-# I, For One, Welcome Our New Mobile Automation Overlords
+# Slides for a Xcode 9 UI Testing Talk
 
-Interactions 2016
+Example test project can be found in `exampleTests`
